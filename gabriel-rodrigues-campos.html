@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @font-face {
+      font-family: "pixel";
+      src: url("/VT323-Regular.ttf");
+    }
+
+    .menu {
+      border: 8px outset white;
+      @apply p-4 rounded-xl;
+      text-shadow: 2px 2px 0px black;
+    }
+
+    img {
+      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: crisp-edges;
+    }
+  </style>
+
+  <body
+    class="font-[pixel] text-4xl bg-gradient-to-t h-screen from-slate-900 to-slate-800 text-white"
+  >
+    <div class="menu m-4 flex">
+      <div>
+        <img class="h-48" src="/gabriel.png" alt="Avatar" />
+      </div>
+      <div>
+        <h1>Gabriel Rodrigues Campos</h1>
+        <h2>Fundador do Grupo de Programação</h2>
+        <p><span class="text-cyan-500">Lv</span> 23</p>
+        <p><span class="text-cyan-500">Class</span> Nerd</p>
+      </div>
+    </div>
+    <div class="menu m-4 flex flex-col gap-6">
+      <p>
+        "No mundo que você deseja criar. Ainda existirão filmes ruims?" - Denji,
+        Chainsaw Man
+      </p>
+      <p>
+        Se eu pudesse escolher uma atividade pra fazer o resto da minha vida
+        seria dormir, sério mesmo, porquê tem gente que sequer gasta tempo
+        acordado?
+      </p>
+      <p>
+        "Ta sem nada pra fazer? Estude. Ta entediado? Estude. Ta sem rumo na
+        vida? Estude."
+      </p>
+      <p>Não é bem fácil assim...</p>
+    </div>
+  </body>
+</html>

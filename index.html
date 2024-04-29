@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @font-face {
+      font-family: "pixel";
+      src: url("/VT323-Regular.ttf");
+    }
+
+    .menu {
+      border: 8px outset white;
+      @apply p-4 rounded-xl;
+      text-shadow: 2px 2px 0px black;
+    }
+
+    .pointing::before {
+      content: url("/selector.png");
+      position: absolute;
+      transform: translate(-38px, 8px);
+      height: 32px;
+      width: 32px;
+    }
+
+    #list li {
+      @apply capitalize ml-5;
+      position: relative;
+    }
+
+    #list li a {
+      @apply pl-4;
+    }
+    #list li a:focus {
+      outline: none;
+    }
+  </style>
+  <body
+    class="font-[pixel] text-4xl bg-gradient-to-t h-screen from-slate-900 to-slate-800 text-white"
+  >
+    <audio id="beep">
+      <source src="/select.mp3" />
+    </audio>
+    <div class="lg:flex p-4 justify-between">
+      <h1 class="menu text-cyan-500">UFF - Ultimate Final Fantasy</h1>
+      <h1 class="menu text-yellow-500 hidden lg:block">
+        Grupo de Programação INFES
+      </h1>
+    </div>
+    <div class="m-4 menu">
+      <ul id="list"></ul>
+    </div>
+    <h1 class="menu m-4 text-yellow-500 lg:hidden block">
+      Grupo de Programação INFES
+    </h1>
+    <script type="module" src="index.ts"></script>
+  </body>
+</html>
