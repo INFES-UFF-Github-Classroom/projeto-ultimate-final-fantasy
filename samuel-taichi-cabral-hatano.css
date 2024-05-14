@@ -2,11 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: auto;
+    height: auto;
 }
 
 body {
+    margin: 15px;
+    background-image: url('bg_site2.jpg');
+    background-size: cover;
+    font-family: "VT323";
+}
+
+.box {
     background-image: linear-gradient(
-        red,
-        blue
+        rgb(0, 0, 226),
+        rgb(0, 0, 105)
     );
+    border: 2px solid;
+    margin: 10px;
+}
+
+#box1{
+    color: white;
+    font-size: 35px;
+}
+
+#box2{
+    color: white;
+    font-size: 70px;
+}
+
+#face{
+    height: 105px;
+    float: left;
 }
