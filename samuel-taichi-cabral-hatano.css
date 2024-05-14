@@ -18,8 +18,14 @@ body {
         rgb(0, 0, 226),
         rgb(0, 0, 105)
     );
-    border: 2px solid;
+    border-top: 2px solid white;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid white;
+    border-right: 2px solid gray;
+    border-width: 3px;
+    border-radius: 5px;
     margin: 10px;
+    text-shadow: 2px 2px 3px black;
 }
 
 #box1{
@@ -29,10 +35,10 @@ body {
 
 #box2{
     color: white;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 #face{
-    height: 105px;
+    height: 140px;
     float: left;
 }
