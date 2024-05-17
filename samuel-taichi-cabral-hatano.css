@@ -39,6 +39,7 @@ body {
 }
 
 #face{
+    margin-left: 4px;
     height: 140px;
     float: left;
 }
