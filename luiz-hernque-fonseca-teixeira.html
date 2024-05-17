@@ -3,10 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <title>Document</title>
     <link href="gradient.css" rel="stylesheet" type="text/css">
 </head>
+<style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    .menu {
+      border: 8px outset white;
+      @apply p-4 rounded-xl;
+      background-color: black;
+    }
+
+    .pointing::before {
+      content: url("/selector.png");
+      position: absolute;
+      transform: translate(-38px, 8px);
+      height: 32px;
+      width: 32px;
+    }
+
+    #list li {
+      @apply capitalize ml-5;
+      position: relative;
+    }
+
+    #list li a {
+      @apply pl-4;
+    }
+    #list li a:focus {
+      outline: none;
+    }
+  </style>
 <body>
-    <h1>luiz</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <div class="menu m-4 flex">
+        <div>
+          <img class="h-48" src="https://cdn.discordapp.com/attachments/1206380826657431563/1239649460544475348/image.png?ex=6643b106&is=66425f86&hm=3b3b6f6829a7a0be35117d780c684aa5c88ad46858ecb32ba4a3d664efc39605&" alt="Avatar" />
+        </div>
+        <div>
+          <h1>  Luiz Henrique Fonseca Teixeira</h1>
+          <h2>  Estudante</h2>
+          <p><span class="text-cyan-500">  Lv</span> 88</p>
+          <p><span class="text-cyan-500">  Class</span> Paladino</p>
+        </div>
+      </div>
+    
+      <div class="menu m-4 flex flex-col gap-6">
+        <p>
+          "Liberdade ou morte" - General John Stark.
+        </p>
+        <p>
+          Para muitos de nós, o caminho é difícil, mas o caminho está sempre lá para seguirmos,
+           não importa quantas vezes possamos cair.
+        </p>
+        <p>
+          "Conhecimento é poder,o esconda bem."
+        </p>
+        <p>Não é bem fácil assim...</p>
+      </div>
 </body>
 </html>
