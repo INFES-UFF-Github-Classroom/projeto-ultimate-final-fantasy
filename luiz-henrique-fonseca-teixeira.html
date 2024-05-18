@@ -13,45 +13,33 @@
     @tailwind utilities;
 
     .menu {
-      border: 8px outset white;
-      @apply p-4 rounded-xl;
+      border: 4px solid  #a27c45;
       background-color: black;
+      padding: 10px;
+      top: 0;
+      margin-left: 18px;
     }
 
-    .pointing::before {
-      content: url("/selector.png");
-      position: absolute;
-      transform: translate(-38px, 8px);
-      height: 32px;
-      width: 32px;
-    }
+  #caixa 
+  {
+    border: 2px solid #a27c45;
+  } 
 
-    #list li {
-      @apply capitalize ml-5;
-      position: relative;
-    }
 
-    #list li a {
-      @apply pl-4;
-    }
-    #list li a:focus {
-      outline: none;
-    }
+
   </style>
-<body text="white">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+<body text="#a27c45">
+  <div id="caixa">
+    <h1 class="menu">Luiz Henrique Fonseca Teixeira<h1>
+  <div>
     <div class="menu m-4 flex">
         <div>
           <img class="h-48" src="/Luiz.png" alt="Avatar" />
         </div>
         <div>
-          <h1>  Luiz Henrique Fonseca Teixeira</h1>
           <h2>  Estudante</h2>
-          <p><span class="text-cyan-500">  Lv</span> 88</p>
-          <p><span class="text-cyan-500">  Class</span> Paladino</p>
+          <p>Lv 14</p>
+          <p>Class Paladino</p>
         </div>
       </div>
     

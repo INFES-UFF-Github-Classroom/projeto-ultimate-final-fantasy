@@ -1,9 +1,6 @@
 body
 {
-    background: hsla(0, 0%, 0%, 1);
-    background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 50%, hsla(60, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 50%, hsla(60, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(0, 0%, 0%, 1) 50%, hsla(60, 100%, 50%, 1) 100%);
+    background-image: url(/324866.jpg);
 
     background-repeat: no-repeat;
     background-position: center;
