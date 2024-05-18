@@ -1,0 +1,6 @@
+.colorChange:hover {
+    color: rgb(0, 47, 255);
+}
+p.alinhado {
+    text-align: center; /* ou 'right', 'left', 'justify' */
+}
