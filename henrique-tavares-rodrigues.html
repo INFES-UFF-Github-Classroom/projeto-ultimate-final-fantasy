@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @font-face{
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Perfil de Henrique</title>
+      <style>
+         @font-face {
             font-family: "LemonMilkBold";
-            src: url("./fontes/LEMONMILK-Regular.otf")
-        }
-        body {
+            src: url("./fontes/LEMONMILK-Regular.otf");
+         }
+         body {
             font-family: "LemonMilkBold";
             display: flex;
-            justify-content: left;
-        }
-        .text-container {
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
-</head>
-<body>
-    <img src="./imagens/AvatarMaker.png" alt="avatar henrique">
-    <div class="text-container">
-        <h2>Henrique Tavares Rodrigues</h2>
-        <h2>Estudante de Programação</h2>
-        <h2>Idade: 20 Anos</h2>
-    </div>
-</body>
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 50h;
+            background-color: #333; 
+            color: #fff; 
+         }
+         img {
+            border-radius: 250px;
+            margin-right: 20px;
+         }
+         .text-container {
+            text-align: left;
+         }
+         h1 {
+            margin: 0;
+         }
+         p {
+            font-size: 1.2em;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="profile-container">
+         <img src="./imagens/AvatarMaker.png" alt="avatar henrique">
+         <div class="text-container">
+            <h1>Henrique Tavares Rodrigues</h1>
+            <p>Estudante de Programação</p>
+            <p>Idade: 21 Anos</p>
+            <h2>Jogos</h2>
+         </div>
+      </div>
+   </body>
 </html>
