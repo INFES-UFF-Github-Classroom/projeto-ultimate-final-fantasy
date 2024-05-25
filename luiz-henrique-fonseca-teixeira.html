@@ -1,77 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <title>Document</title>
-    <link href="gradient.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <title>Document</title>
 </head>
 <style>
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-    .menu {
-      border: 4px solid  #a27c45;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 10px;
-      top: 0;
-      margin-left: 18px;
-    }
+  body {
+    background-image: url(./public/324866.jpg);
 
-  #caixa 
-  {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#FFFF00", GradientType=1);
+  }
+
+  .menu {
+    border: 4px solid #a27c45;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    top: 0;
+    margin-left: 18px;
+  }
+
+  #caixa {
     border: 2px solid #a27c45;
   }
 
-  h1 
-{
-  font-size: 28px;
-}
+  h1 {
+    font-size: 28px;
+  }
+</style>
 
+<div id="caixa">
+  <h1 class="menu">Luiz Henrique Fonseca Teixeira<h1>
+      <div>
 
-  </style>
+        <body text="#a27c45">
 
-  <div id="caixa">
-    <h1 class="menu">Luiz Henrique Fonseca Teixeira<h1>
-  <div>
-<body text="#a27c45">
-  
-    <div class="menu m-4 flex">
-        <div>
-          <img class="h-48" src="/Luiz.png" alt="Avatar" />
-        </div>
-        <div>
-          <h2>  Estudante</h2>
-          <p>Lv 14</p>
-          <p>Class Paladino</p>
-        </div>
-      </div>
-    
-      <div class="menu m-4 flex flex-col gap-6">
-        <p>
-          "Liberdade ou morte" - General John Stark.
-        </p>
-        <p>
-          Para muitos de nós, o caminho é difícil, mas o caminho está sempre lá para seguirmos,
-           não importa quantas vezes possamos cair.
-        </p>
-        <p>
-          "Conhecimento é poder,o esconda bem."
-        </p>
-      </div>
+          <div class="menu m-4 flex">
+            <div>
+              <img class="h-48" src="/Luiz.png" alt="Avatar" />
+            </div>
+            <div>
+              <h2> Estudante</h2>
+              <p>Lv 14</p>
+              <p>Class Paladino</p>
+            </div>
+          </div>
 
-      <div class="menu m-4 flex flex-col gap-6">
-        <p>
-          Programador de C
-        </p>
-        <p>
-          Entusiasta de tecnologia.
-        </p>
-        <p>
-          Usuário de academia.
-        </p>
-      </div>
-</body>
+          <div class="menu m-4 flex flex-col gap-6">
+            <p>
+              "Liberdade ou morte" - General John Stark.
+            </p>
+            <p>
+              Para muitos de nós, o caminho é difícil, mas o caminho está sempre lá para seguirmos,
+              não importa quantas vezes possamos cair.
+            </p>
+            <p>
+              "Conhecimento é poder,o esconda bem."
+            </p>
+          </div>
+
+          <div class="menu m-4 flex flex-col gap-6">
+            <p>
+              Programador de C
+            </p>
+            <p>
+              Entusiasta de tecnologia.
+            </p>
+            <p>
+              Usuário de academia.
+            </p>
+          </div>
+        </body>
+
 </html>

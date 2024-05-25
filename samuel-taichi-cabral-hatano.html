@@ -1,29 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel = "stylesheet" href="samuel-taichi-cabral-hatano.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <title>Sam</title>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <img id="face" src="Sams.png">
-    
-    <div class="box" id="box1">Samuel Taichi Cabral Hatano <br>
-    Eu so sou um programador por diversao <br>
-    lv: 18 <br>
-    class: Geek </div>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 
-    <div class="box" id="box2">10 reais a cenoura? coelho da pascoa vai passar fome <br>
-        Ela era muito grande para ser chamada de espada, era gigantesca, pesada e muito grosseira. Era, de fato, um maciço de ferro. Meu médico </div>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: auto;
+      height: auto;
+    }
+
+    body {
+      margin: 15px;
+      background-image: url("bg_site2.jpg");
+      background-size: cover;
+      font-family: "VT323";
+    }
+
+    .box {
+      background-image: linear-gradient(rgb(0, 0, 226), rgb(0, 0, 105));
+      border-top: 2px solid white;
+      border-bottom: 2px solid gray;
+      border-left: 2px solid white;
+      border-right: 2px solid gray;
+      border-width: 3px;
+      border-radius: 5px;
+      margin: 10px;
+      text-shadow: 2px 2px 3px black;
+    }
+
+    #box1 {
+      color: white;
+      font-size: 35px;
+    }
+
+    #box2 {
+      color: white;
+      font-size: 40px;
+    }
+
+    #face {
+      margin-left: 8px;
+      height: 140px;
+      float: left;
+    }
+  </style>
+
+  <body>
+    <img id="face" src="Sams.png" />
+
+    <div class="box" id="box1">
+      Samuel Taichi Cabral Hatano <br />
+      Eu so sou um programador por diversao <br />
+      lv: 18 <br />
+      class: Geek
+    </div>
+
+    <div class="box" id="box2">
+      10 reais a cenoura? coelho da pascoa vai passar fome <br />
+      Ela era muito grande para ser chamada de espada, era gigantesca, pesada e
+      muito grosseira. Era, de fato, um maciço de ferro. Meu médico
+    </div>
 
     <audio controls autoplay>
-        <source src="ff1bg.mp3">
+      <source src="ff1bg.mp3" />
     </audio>
-</body>
+  </body>
 </html>
