@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+}
+
+body {
+    margin: 15px;
+    background-image: url('bg_site2.jpg');
+    background-size: cover;
+    font-family: "VT323";
+}
+
+.box {
+    background-image: linear-gradient(
+        rgb(0, 0, 226),
+        rgb(0, 0, 105)
+    );
+    border-top: 2px solid white;
+    border-bottom: 2px solid gray;
+    border-left: 2px solid white;
+    border-right: 2px solid gray;
+    border-width: 3px;
+    border-radius: 5px;
+    margin: 10px;
+    text-shadow: 2px 2px 3px black;
+}
+
+#box1{
+    color: white;
+    font-size: 35px;
+}
+
+#box2{
+    color: white;
+    font-size: 40px;
+}
+
+#face{
+    margin-left: 8px;
+    height: 140px;
+    float: left;
+}
